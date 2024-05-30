@@ -1,0 +1,37 @@
+{
+    "name": "trendyminds/tip",
+    "description": "A Craft-like tip fieldtype for Statamic",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "statamic/cms": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Trendyminds\\Tip\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Tip",
+            "description": "Tip addon"
+        },
+        "laravel": {
+            "providers": [
+                "Trendyminds\\Tip\\ServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "laravel/pint": "^1.16"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Hide the name and instructions */
+.tip-fieldtype .field-inner,
+.tip-fieldtype > label,
+.tip-fieldtype > .help-block {
+	@apply !ttw-hidden;
+}
